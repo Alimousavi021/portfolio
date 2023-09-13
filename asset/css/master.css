@@ -1,0 +1,505 @@
+body {
+  scroll-behavior: smooth;
+}
+
+main {
+  overflow-x: hidden;
+  background-color: rgba(0, 0, 0, 0.915);
+}
+main .head_top {
+  height: 110vh;
+  background-image: url(../img/photo_5767150277273697712_y.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 70%;
+  position: relative;
+}
+main .head_top::before {
+  content: "";
+  display: flex;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.36);
+}
+main .head_top > .header {
+  height: 80px;
+  background-color: transparent;
+}
+main .head_top > .header h2 {
+  font-family: "Titan One", cursive;
+  font-size: 40px;
+  color: rgba(255, 255, 255, 0.732);
+}
+main .head_top > .header ul > li {
+  list-style-type: none;
+}
+main .head_top > .header ul > li > a {
+  text-decoration: none;
+  color: white;
+  text-transform: capitalize;
+  font-size: 15px;
+  font-family: "Archivo", sans-serif;
+}
+main .head_top > .header ul > li > a:hover {
+  color: rgb(244, 181, 66);
+}
+main .head_top > .header input {
+  display: none;
+}
+main .head_top > .header #ali + label {
+  display: flex;
+  cursor: pointer;
+  transition: 1s;
+}
+main .head_top > .header #ali + label i {
+  color: white;
+  font-size: 30px;
+}
+main .head_top > .header #ali:checked ~ .drop {
+  top: 100%;
+}
+main .head_top > .header .drop {
+  height: 300px;
+  background-color: rgba(43, 41, 41, 0.759);
+  left: 0;
+  top: -400%;
+  transition: 1s;
+}
+main .head_top > .header .drop ul {
+  left: 0;
+}
+main .head_top > .header .drop ul li {
+  list-style-type: none;
+  height: 50px;
+  transition: 0.4s;
+  width: 100%;
+}
+main .head_top > .header .drop ul li:hover {
+  background-color: black;
+}
+main .head_top > .header .drop ul li a {
+  text-decoration: none;
+  color: white;
+  font-family: "Archivo", sans-serif;
+  font-size: 16px;
+  text-transform: capitalize;
+}
+main .head_top > .header .drop ul li a:hover {
+  color: rgb(241, 185, 82);
+}
+main .head_top .firstpage {
+  height: 90vh;
+}
+main .head_top .firstpage h2 {
+  color: rgb(206, 199, 199);
+  font-family: "Shadows Into Light", cursive;
+  font-size: 80px;
+  z-index: 1;
+}
+main .head_top .firstpage p {
+  color: rgb(240, 155, 43);
+  font-family: "Titan One", cursive;
+  font-size: 50px;
+}
+main .head_top .firstpage button {
+  background-color: transparent;
+  color: white;
+  border-radius: 30px;
+  border: 1px solid white;
+  margin: 10px;
+  height: 50px;
+  width: 100px;
+  position: relative;
+  text-transform: capitalize;
+}
+main .head_top .firstpage button:nth-of-type(1) {
+  width: 150px;
+  overflow: hidden;
+}
+main .head_top .firstpage button:nth-of-type(1)::before {
+  content: "";
+  background-color: rgba(243, 191, 94, 0.693);
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 0;
+  height: 100%;
+  transition: 0.5s;
+}
+main .head_top .firstpage button:nth-of-type(1):hover::before {
+  left: 0;
+  width: 100%;
+}
+main .head_top .firstpage button:nth-of-type(2) {
+  width: 100px;
+  overflow: hidden;
+  background-color: white;
+  color: rgb(240, 155, 43);
+}
+main .head_top .firstpage button:nth-of-type(2)::before {
+  content: "";
+  background-color: rgba(243, 191, 94, 0.693);
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 0;
+  height: 100%;
+  transition: 0.5s;
+}
+main .head_top .firstpage button:nth-of-type(2):hover::before {
+  left: 0;
+  width: 100%;
+}
+main .about {
+  background-color: rgb(28, 27, 27);
+}
+main .about h2 {
+  font-size: 75px;
+  font-family: "Titan One", cursive;
+  color: rgb(41, 40, 40);
+  transition: 0.5s;
+  padding-top: 30px;
+  cursor: pointer;
+}
+main .about h2:hover {
+  color: rgba(0, 0, 0, 0.36);
+}
+main .about .svg svg {
+  width: 150px;
+  height: 150px;
+  display: flex;
+  margin: 100px auto;
+  padding-right: 15px;
+}
+main .about .svg svg:nth-of-type(2) circle {
+  stroke-dasharray: 0 60px;
+  animation: anime2 linear forwards 3 1s;
+}
+main .about .svg svg:nth-of-type(3) circle {
+  stroke-dasharray: 0 60px;
+  animation: anime3 linear forwards 3 1s;
+}
+main .about .svg svg text {
+  font-family: "Shadows Into Light", cursive;
+  font-size: 23px;
+  fill: white;
+}
+main .about .svg svg text:nth-of-type(2) {
+  font-size: 25px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+main .about .svg svg circle {
+  fill: rgb(41, 40, 40);
+  stroke: rgba(242, 202, 71, 0.745);
+  stroke-width: 5px;
+  stroke-dasharray: 0 60px;
+  animation: anime1 linear forwards 3 1s;
+}
+main .about article h3 {
+  color: white;
+  font-family: "Shadows Into Light", cursive;
+  font-size: 20px;
+  margin-top: 40px;
+}
+main .about article h2 {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 28px;
+  background-color: rgba(243, 191, 94, 0.693);
+  color: white;
+}
+main .about article section h3 {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+main .about article section p {
+  color: gray;
+  margin-top: 20px;
+}
+main .about article footer {
+  padding: 20px;
+}
+main .about article footer h4 {
+  font-size: 12px;
+  color: rgb(243, 184, 74);
+}
+main .about article footer span {
+  background-color: rgb(134, 130, 130);
+  width: 40px;
+  height: 1px;
+  border-radius: 5px;
+  transform: translateY(8px) translateX(5px);
+}
+main .about article footer i {
+  color: white;
+  background-color: transparent;
+  margin: 0 10px;
+  transform: translateY(-5px) translateX(6px);
+  cursor: pointer;
+}
+main .about article footer i:hover {
+  color: rgb(243, 184, 74);
+}
+@keyframes anime1 {
+  to {
+    stroke-dasharray: 55px 5px;
+  }
+}
+@keyframes anime2 {
+  to {
+    stroke-dasharray: 40px 20px;
+  }
+}
+@keyframes anime3 {
+  to {
+    stroke-dasharray: 45px 15px;
+  }
+}
+main .title {
+  height: 300px;
+  background-color: rgba(8, 8, 8, 0.933);
+}
+main .title:hover > h2 {
+  color: rgba(22, 22, 22, 0.474);
+}
+main .title h2 {
+  font-family: "Titan One", cursive;
+  font-size: 75px;
+  color: rgb(41, 40, 40);
+  transition: 0.5s;
+}
+main .services {
+  background-color: rgba(8, 8, 8, 0.933);
+}
+main .services .box {
+  background-color: rgba(0, 0, 0, 0.956);
+  margin: 20px;
+}
+main .services .box:hover > span {
+  transform: rotateZ(0deg);
+  background-color: rgba(247, 199, 110, 0.459);
+}
+main .services .box span {
+  height: 90px;
+  width: 90px;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(28, 27, 27);
+  margin: 30px 0;
+  transform: rotateZ(45deg);
+  transition: 0.5s;
+}
+main .services .box span i {
+  font-size: 35px;
+  color: rgba(247, 199, 110, 0.459);
+  transform: rotateZ(-45deg);
+}
+main .services .box h3 {
+  font-size: 17px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  color: aliceblue;
+  margin: 10px 0;
+  font-family: "Shadows Into Light", cursive;
+}
+main .services .box p {
+  color: gray;
+  margin: 10px 0;
+  text-align: center;
+  -moz-text-align-last: center;
+       text-align-last: center;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+main .port {
+  background-color: rgb(28, 27, 27);
+}
+main .portfolio {
+  background-color: rgb(28, 27, 27);
+}
+main .portfolio figure {
+  transition: 0.4s;
+  position: relative;
+  overflow: hidden;
+}
+main .portfolio figure img {
+  border-radius: 5px;
+}
+main .portfolio figure::before {
+  content: "Creative Design";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.485);
+  opacity: 0;
+  transition: 0.4s;
+}
+main .portfolio figure:hover::before {
+  opacity: 1;
+}
+main .portfolio figure:hover > figcaption {
+  left: 0;
+  width: 100%;
+  bottom: 10%;
+}
+main .portfolio figure figcaption {
+  position: absolute;
+  left: 50%;
+  bottom: -20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 1s;
+  width: 0;
+  height: 15%;
+  background-color: rgba(0, 0, 0, 0.207);
+}
+main .portfolio figure figcaption > h2 {
+  text-transform: capitalize;
+  font-size: 14px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  color: gray;
+}
+main .blog {
+  background-color: rgba(8, 8, 8, 0.933);
+}
+main .blog figure {
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+main .blog figure:hover > figcaption {
+  bottom: 17%;
+}
+main .blog figure:hover > img {
+  filter: none;
+}
+main .blog figure img {
+  border-radius: 5px;
+  filter: blur(2px);
+  transition: 0.5s;
+}
+main .blog figure figcaption {
+  width: 100%;
+  height: 40%;
+  position: absolute;
+  left: 5%;
+  bottom: 0;
+  transition: 0.5s;
+}
+main .blog figure figcaption h2 {
+  color: orange;
+  font-size: 10px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  cursor: pointer;
+}
+main .blog figure figcaption p {
+  font-size: 23px;
+  color: white;
+  cursor: pointer;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+main .blog figure figcaption span {
+  color: rgb(250, 4, 4);
+  font-size: 15px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+main .blog figure figcaption span:hover {
+  color: orange;
+}
+main .contact {
+  background-color: rgb(28, 27, 27);
+}
+main .contact figure {
+  position: relative;
+}
+main .contact figure figcaption {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+main .contact figure figcaption span {
+  font-size: 12px;
+  color: rgba(213, 175, 105, 0.738);
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+main .contact figure figcaption p {
+  color: rgb(175, 175, 173);
+  font-size: 15px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+main .contact section .row1 input {
+  background-color: rgb(28, 27, 27);
+  border-radius: 10px;
+  color: white;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  border: 2px solid gray;
+}
+main .contact section .row2 {
+  margin-top: 20px;
+}
+main .contact section .row2 input {
+  background-color: rgb(28, 27, 27);
+  border-radius: 10px;
+  color: white;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  border: 2px solid gray;
+}
+main .contact section .row3 {
+  margin-top: 20px;
+}
+main .contact section .row3 textarea {
+  border-radius: 10px;
+  background-color: rgb(28, 27, 27);
+  color: white;
+  margin-bottom: 10px;
+}
+main .footer {
+  background-color: rgba(8, 8, 8, 0.933);
+}
+main .footer h2 {
+  font-family: "Titan One", cursive;
+  font-size: 40px;
+  color: rgba(255, 255, 255, 0.732);
+  margin-top: 15px;
+}
+main .footer span {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: rgba(40, 38, 38, 0.833);
+  transform: rotateZ(45deg);
+  transition: 0.5s;
+  margin: 15px 10px;
+}
+main .footer span:hover > i {
+  transform: none;
+  color: white;
+}
+main .footer span:hover {
+  transform: rotateZ(0deg);
+  background-color: rgba(247, 199, 110, 0.459);
+}
+main .footer span i {
+  font-size: 16px;
+  color: rgba(247, 199, 110, 0.459);
+  transform: rotateZ(-45deg);
+  transition: 0.5s;
+}
+main .footer p {
+  font-size: 10px;
+  color: rgb(175, 175, 173);
+  margin-top: 10px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}/*# sourceMappingURL=master.css.map */
