@@ -1,1 +1,22 @@
-
+{
+    "name": "ali",
+    "short_name": "ali",
+    "start_url": "index.html",
+    "display": "standalone",
+    "background_color": "#fe585a",
+    "theme_color": "#fe585a",
+    "orientation": "portrait-primary",
+    "icons": [
+        {
+            "src": "https://github.com/Alimousavi021/portfolio/blob/main/ali512.png",
+            "type": "image/png",
+            "sizes": "512×512",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "https://github.com/Alimousavi021/portfolio/blob/main/ali144.png",
+            "sizes": "144x144",
+            "type": "image/png"
+        }
+    ]
+}
